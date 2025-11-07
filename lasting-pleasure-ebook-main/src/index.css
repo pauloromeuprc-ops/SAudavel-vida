@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 225 44% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 257 50% 72%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 97%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 261 44% 72%;
+    --accent-foreground: 225 44% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 257 50% 72%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for this project */
+    --navy: 225 44% 20%;
+    --lilac: 257 50% 72%;
+    --purple-soft: 261 44% 72%;
+    --gray-bg: 210 20% 97%;
+    
+    /* Payment buttons */
+    --mpesa: 0 72% 51%;
+    --emola: 25 95% 53%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 44% 20%), hsl(257 50% 72%), hsl(261 44% 72%));
+    --gradient-card: linear-gradient(135deg, hsl(220 60% 97%), hsl(261 60% 97%));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsla(225 44% 20% / 0.08);
+    --shadow-md: 0 4px 12px hsla(225 44% 20% / 0.1);
+    --shadow-lg: 0 8px 24px hsla(225 44% 20% / 0.12);
+    
+    /* Transitions */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
